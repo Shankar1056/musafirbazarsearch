@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "21156356420",
+    "firebase_url": "https://musafirbazarsearch.firebaseio.com",
+    "project_id": "musafirbazarsearch",
+    "storage_bucket": "musafirbazarsearch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21156356420:android:2761e69f59fdadab",
+        "android_client_info": {
+          "package_name": "musafirbazar.search"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21156356420-b64pc3cqjf86f3p69o7nv0si4pugbg1s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "musafirbazar.search",
+            "certificate_hash": "1ba61a5a83eeb6b3e0e25ac67cb23014a5572427"
+          }
+        },
+        {
+          "client_id": "21156356420-imtckd6dk6cqko15oco09frmgvgpgj84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl9Fgo6tiWONdu1xrs68aoihZ1C06cnic"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21156356420-imtckd6dk6cqko15oco09frmgvgpgj84.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

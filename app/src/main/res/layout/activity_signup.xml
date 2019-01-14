@@ -22,10 +22,10 @@
 				android:gravity="center">
 
 				<ImageView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
+					android:layout_width="100dp"
+					android:layout_height="100dp"
 					android:layout_margin="@dimen/margin_20"
-					android:background="@drawable/logo"/>
+					android:background="@drawable/web_hi_res_512"/>
 			</LinearLayout>
 
 			<!-- Login progress -->

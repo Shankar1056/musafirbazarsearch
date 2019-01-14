@@ -13,7 +13,7 @@
     <style name="AppTheme.customtheme">
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
-    <item name="android:windowBackground">@drawable/spaslsh</item>
+    <item name="android:windowBackground">@color/red</item>
     </style>
 
     <style name="AppTheme.NoActionBar">

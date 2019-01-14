@@ -173,9 +173,9 @@ public class MainActivity extends BaseActivity implements OnConnectionFailedList
 
     boolean isPermissionGranted;
     private Tooltip.ClosePolicy mClosePolicy = Tooltip.ClosePolicy.TOUCH_ANYWHERE_CONSUME;
-    
-    
-    
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -236,7 +236,7 @@ public class MainActivity extends BaseActivity implements OnConnectionFailedList
         TextView travellayout = (TextView) findViewById(R.id.travellayout);
         TextView educationlayout = (TextView) findViewById(R.id.educationlayout);
         TextView shoppinglayout = (TextView) findViewById(R.id.shoppinglayout);
-        TextView hotdeallayout = (TextView) findViewById(R.id.hotdeallayout);
+        TextView offerslayout = (TextView) findViewById(R.id.offerslayout);
         ImageView feedback = (ImageView)findViewById(R.id.feedback);
 
         findViewById(R.id.profile).setOnClickListener(this);
@@ -252,7 +252,7 @@ public class MainActivity extends BaseActivity implements OnConnectionFailedList
         cancellation.setOnClickListener(this);
         travellayout.setOnClickListener(this);
         educationlayout.setOnClickListener(this);
-        hotdeallayout.setOnClickListener(this);
+        offerslayout.setOnClickListener(this);
         drawerlist.setOnClickListener(this);
         shoppinglayout.setOnClickListener(this);
         feedback.setOnClickListener(this);
@@ -271,7 +271,7 @@ public class MainActivity extends BaseActivity implements OnConnectionFailedList
         travellayout.setTypeface(Utilz.font(MainActivity.this, "medium"));
         shoppinglayout.setTypeface(Utilz.font(MainActivity.this, "medium"));
         educationlayout.setTypeface(Utilz.font(MainActivity.this, "medium"));
-        hotdeallayout.setTypeface(Utilz.font(MainActivity.this, "medium"));
+        offerslayout.setTypeface(Utilz.font(MainActivity.this, "medium"));
 
         name.setText(ClsGeneral.getPreferences(MainActivity.this, ClsGeneral.USER_NAME));
         number.setText(ClsGeneral.getPreferences(MainActivity.this, ClsGeneral.USER_PHONENUMBER));
@@ -306,7 +306,7 @@ public class MainActivity extends BaseActivity implements OnConnectionFailedList
         toolbartext.setOnClickListener(this);
 
         expandable_list_swipe.setOnRefreshListener(this);
-    
+
         DisplayMetrics metrics = getResources().getDisplayMetrics();
         Tooltip.make(MainActivity.this,
             new Tooltip.Builder()
@@ -320,8 +320,8 @@ public class MainActivity extends BaseActivity implements OnConnectionFailedList
                 .floatingAnimation(Tooltip.AnimationBuilder.DEFAULT)
                 .build()
         ).show();
-        
-        
+
+
         if (Utilz.isInternetConnected(MainActivity.this))
             expandable_list_swipe.setRefreshing(true);
 
@@ -365,6 +365,7 @@ public class MainActivity extends BaseActivity implements OnConnectionFailedList
         });
 
         changebackground(share, sharelayout, shareimage, R.mipmap.share, false);
+
 
     }
 
@@ -538,7 +539,7 @@ public class MainActivity extends BaseActivity implements OnConnectionFailedList
                     drawer.openDrawer(GravityCompat.END);
                 }
                 break;
-            
+
             case R.id.travellayout:
                 openwebsite("https://play.google.com/store/apps/details?id=com.musafirbazar.app.musafirbazar");
                 break;
@@ -548,7 +549,7 @@ public class MainActivity extends BaseActivity implements OnConnectionFailedList
             case R.id.shoppinglayout:
                 openwebsite("https://ecommerce.musafirbazar.com/");
                 break;
-            case R.id.hotdeallayout:
+            case R.id.offerslayout:
                 openwebsite("https://www.musafirbazar.com/");
               //  startActivity(new Intent(MainActivity.this,OffersList.class));
                 break;
@@ -561,9 +562,9 @@ public class MainActivity extends BaseActivity implements OnConnectionFailedList
                 try {
                     Intent sendIntent = new Intent();
                     sendIntent.setAction(Intent.ACTION_SEND);
-                    sendIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=apextechies.etodo&hl=en");
+                    sendIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=musafirbazar.search&hl=en");
                     sendIntent.setType("text/plain");
-                    startActivity(Intent.createChooser(sendIntent, "Share Webspider"));
+                    startActivity(Intent.createChooser(sendIntent, "Share MusafirBazar"));
 
                 } catch (Exception e) {
                     e.printStackTrace();

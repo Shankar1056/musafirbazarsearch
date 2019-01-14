@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/travellayout"
+        android:icon="@mipmap/travels"
+        android:title="@string/travel"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/educationlayout"
+        android:icon="@mipmap/eduuuu"
+        android:title="@string/education"
+
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/shoppinglayout"
+        android:icon="@mipmap/shop"
+        android:title="@string/shopping"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/offerslayout"
+        android:icon="@mipmap/offers"
+        android:title="@string/offers"
+        app:showAsAction="ifRoom" />
+
+</menu>

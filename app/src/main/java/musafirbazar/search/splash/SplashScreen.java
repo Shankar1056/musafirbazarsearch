@@ -83,7 +83,7 @@ public class SplashScreen extends AppCompatActivity implements GoogleApiClient.C
 
                     
                     EnableGPSAutoMatically();
-                    sleep(2000);
+                    sleep(3000);
                 } catch (InterruptedException e) {
                     // TODO: handle exception
                     e.printStackTrace();
@@ -128,7 +128,7 @@ public class SplashScreen extends AppCompatActivity implements GoogleApiClient.C
         addIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, getResources().getString(R.string.app_name));
         addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE,
                 Intent.ShortcutIconResource.fromContext(getApplicationContext(),
-                        R.drawable.logo));
+                        R.drawable.white_logo));
 
         addIntent
                 .setAction("com.android.launcher.action.INSTALL_SHORTCUT");

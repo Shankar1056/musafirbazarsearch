@@ -116,7 +116,7 @@
 	<string name="fetchinglocation">Fetching Location...</string>
 	<!--<string name="google_geo_api_key">AIzaSyBzTAsqMHJebssUPMWjqdpzq1-4WVHyJrQ</string>--> <!-- office-->
 	<!--<string name="google_geo_api_key">AIzaSyAXNbzpa00le9rW9vw7TmFWpLPIG_HyIVw</string>--> <!--room-->
-	<string name="google_geo_api_key">AIzaSyBK1rGnhOHxqL282qxy5WVNgSO2obP-e1g</string> <!--live-->
+	<string name="google_geo_api_key">AIzaSyBvxJVbb5avZC5vT7zuFWNwN5xM-y4FfRE</string> <!--live-->
 
 
     <!-- All Fonts   -->
